@@ -153,9 +153,9 @@ public:
 
     // Resources for background image and the bus route timer
     wxBitmap backgroundBitmap;  
-    wxTimer* timer;  // Timer for periodic updates
-    int m_currentPathIndex;  // Current index in the bus route path
-    bool m_isMovingBackward;  // Flag to check if the bus is moving in reverse direction
+    wxTimer* timer = nullptr;  // Инициализация при объявлении
+    int m_currentPathIndex=0;  // Current index in the bus route path
+    bool m_isMovingBackward=false;  // Flag to check if the bus is moving in reverse direction
     bool isFirstTick;  // Flag to check if this is the first tick of the timer
     wxPoint busPosition;  // Current position of the bus on the route
 

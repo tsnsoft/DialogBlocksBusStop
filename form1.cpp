@@ -244,7 +244,7 @@ void Form1::InitBusRoute()
 {
     m_isMovingBackward = false;                     // Set moving backward flag to false, as we start in the forward direction
     isFirstTick = true;                             // Indicate that this is the first tick (used to track state)
-    busPosition = routeForward[m_currentPathIndex]; // Set bus position to the first point in the forward route
+    busPosition = routeForward[m_currentPathIndex]; // m_currentPathIndex ещё не инициализирован!
     m_currentPathIndex = 0;                         // Reset current path index to the beginning of the route
     startStopIndex = 0;                             // Set the start stop index to the first stop (0)
 
